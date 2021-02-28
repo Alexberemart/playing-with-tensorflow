@@ -8,9 +8,9 @@ inputs = [
     "FG3_attempted_by_minutes_3"
 ]
 
-data = pd.read_csv('nba/data_nba.csv', usecols=inputs)
+data = pd.read_csv('nba/data_nba.csv')
 point = int((data.shape[0] * 7.5) // 10)
-data_x = data.to_numpy()
+data_x = data[inputs].to_numpy()
 data_y = data["position2"].to_numpy()
 x_train = data_x[0:point, :].copy()
 y_train = data_y[0:point].copy()
