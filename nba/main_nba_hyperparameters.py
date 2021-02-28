@@ -5,7 +5,8 @@ import matplotlib.pyplot as plt
 
 inputs = [
     "height3",
-    "FG3_attempted_by_minutes_3"
+    "FG3_attempted_by_minutes_3",
+    "blocks_by_minutes_3"
 ]
 
 data = pd.read_csv('data_nba.csv')
@@ -18,9 +19,9 @@ x_test = data_x[point:, :].copy()
 y_test = data_y[point:].copy()
 
 number_of_epochs = [
-    70,
     80,
-    90
+    90,
+    100
 ]
 
 number_of_neurons = [
