@@ -130,8 +130,8 @@ ax.scatter(x_plot[0], y_plot[0], c=c_plot[0], s=200, marker='s', alpha=0.5)
 ax.scatter(x_plot[1], y_plot[1], c=c_plot[1], s=200, marker='o', alpha=0.5)
 ax.scatter(x_plot[2], y_plot[2], c=c_plot[2], s=200, marker='P', alpha=0.5)
 
-ax.set_xlabel('Loss value', fontsize=15)
-ax.set_ylabel('Epochs', fontsize=15)
+ax.set_ylabel('Loss value', fontsize=15)
+ax.set_xlabel('Epochs', fontsize=15)
 ax.set_title('Loss by hyperparameters')
 
 ax.grid(True)
