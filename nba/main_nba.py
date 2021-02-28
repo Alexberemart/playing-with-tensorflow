@@ -4,7 +4,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 inputs = [
-    "height3"
+    "height3",
+    "FG3_attempted_by_minutes_3"
 ]
 
 data = pd.read_csv('nba/data_nba.csv')
@@ -17,9 +18,9 @@ x_test = data_x[point:, :].copy()
 y_test = data_y[point:].copy()
 
 number_of_epochs = [
-    50,
-    60,
-    70
+    70,
+    80,
+    90
 ]
 
 number_of_neurons = [
@@ -29,9 +30,9 @@ number_of_neurons = [
 ]
 
 learning_rate = [
-    0.003,
-    0.004,
-    0.005
+    0.001,
+    0.002,
+    0.003
 ]
 
 times = [1, 2, 3, 4, 5]
