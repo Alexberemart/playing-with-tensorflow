@@ -6,8 +6,9 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 inputs = [
-    "height3",
-    "FG3_attempted_by_minutes_3"
+    "height",
+    "blocks_by_minutes_1",
+    "FG3_attempted_by_minutes_1"
 ]
 
 data = pd.read_csv('data_nba.csv', usecols=inputs)
